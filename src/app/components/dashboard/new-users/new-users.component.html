@@ -1,0 +1,28 @@
+<div class="new-users w3-container shadow-card">
+    <h1>New User Registrations</h1>
+
+    <div class="tbl-content">
+      <div class="new-users-card" *ngFor="let newUser of newUsers">
+        <div class="profile-image">
+          <img src="../../../../assets/images/profile-pic.jpg" class="profile-pic" alt="">
+          <i class="fa-solid fa-circle fa-2xs online-status" [ngStyle]="newUser.isActive ? {'color': 'var(--successColor)'} : {'color': 'var(--secondaryColor)'}"></i>
+        </div>
+        <div class="user-details">
+              <p class="user-name">{{newUser.name}}</p>
+              <p class="user-location">{{newUser.country}}</p>
+          </div>
+          <div class="w3-light-grey progress-bar">
+            <div 
+             class="w3-container w3-center progress" [ngStyle]="{'width':newUser.progress+'%'}"
+              [ngClass]="{'w3-red' : newUser.progress < 25, 
+              'w3-orange' : newUser.progress > 25 && newUser.progress < 50,
+              'w3-green' : newUser.progress > 50 && newUser.progress < 75,
+              'w3-blue' : newUser.progress > 75}">
+            </div>
+          </div>
+          <p class="progress-value">{{newUser.progress}}&#37;</p>
+          <button class="user-button">More</button>
+      </div>
+    </div>
+
+</div>

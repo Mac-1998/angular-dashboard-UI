@@ -1,0 +1,22 @@
+
+
+.graphs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 45px;
+  z-index: 2;
+}
+
+.area-graph {
+  flex: 1;
+}
+
+.column-graph {
+  flex: 1;
+}
+
+.donut-graph {
+  width: 350px;
+}
+

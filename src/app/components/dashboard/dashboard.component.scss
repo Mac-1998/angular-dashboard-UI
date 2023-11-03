@@ -1,0 +1,21 @@
+.dashboard-main {
+    padding: 70px;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+    margin-top: 45px;
+    margin-bottom: 7px;
+
+}
+
+.recent-orders {
+    flex: 2;
+    height: 500px;
+}
+
+.new-users {
+    flex: 1;
+}

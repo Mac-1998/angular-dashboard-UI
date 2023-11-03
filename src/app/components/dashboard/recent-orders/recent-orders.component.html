@@ -1,0 +1,39 @@
+<div class="recent-orders shadow-card">
+    <!--for demo wrap-->
+    <h1>Recent Orders</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Customer</th>
+            <th>Products</th>
+            <th>Delivery Date</th>
+            <th>Status</th>
+            <th>Tracking No.</th>
+            <th>Shipping</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0">
+        <tbody *ngFor="let recentOrder of recentOrders; index as i">
+          <tr>
+            <td>{{i + 1}}</td>
+            <td>{{recentOrder.name}}</td>
+            <td>{{recentOrder.product}}</td>
+            <td>{{recentOrder.delivery_date | date: 'mediumDate'}}</td>
+            <td ><label class="status"
+              [ngStyle]="recentOrder.status == 'Failed' ? {'background-color': 'var(--dangerColor)'}
+              : recentOrder.status == 'Paid' ? {'background-color': 'var(--successColor)'}
+              : recentOrder.status == 'Pending' ? {'background-color': 'var(--subColor)'}
+              : {'background-color': ''}" >{{recentOrder.status}}</label></td>
+            <td>{{recentOrder.tracking_no}}</td>
+            <td>{{recentOrder.shipping ? 'Yes': 'No'}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+</div>

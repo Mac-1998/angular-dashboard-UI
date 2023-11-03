@@ -1,0 +1,10 @@
+<div class="top-cards" >
+    <div class="top-card shadow-card" *ngFor="let topCard of topCards; index as i" >
+        <div class="top-section">
+            <p class="card-value">{{topCard.value}}&#37;</p>
+            <div><i class="fa-solid fa-{{logos[i]}} card-logo"></i></div>
+        </div>
+        <p class="title">{{topCard.header}}</p>
+        <p class="sub-title">{{topCard.sub_header}}</p>
+    </div>
+</div>

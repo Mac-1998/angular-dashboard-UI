@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primaryColor: rgb(238, 250, 255);
+  --secondaryColor: rgb(94, 94, 224);
+  --successColor: rgb(41, 184, 41);
+  --dangerColor: rgb(235, 96, 96);
+  --buttonColor: rgb(110, 110, 223);;
+  --subColor: #9b9b9b;
+  --globalFont: 'Mulish', sans-serif;
+}
+
+$globalFont: 'Mulish', sans-serif;
+$globalFontColor: rgb(77 62 62);
+
+* {
+    margin: 0;
+    font-family: $globalFont;
+    color: $globalFontColor;
+}
+
+.shadow-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+}

@@ -1,0 +1,19 @@
+.bot-section {
+    display: flex;
+    flex-direction: row
+}
+
+.side-section {
+    width: 70px;
+    position: fixed;
+    margin-top: 70px;
+
+}
+
+.right-section {
+    flex: 1;
+    background-color: var(--primaryColor);
+    margin-left: 70px;
+    margin-top: 70px;
+}
+

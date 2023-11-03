@@ -1,0 +1,62 @@
+.top-cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+}
+
+p {
+  margin: 0;
+}
+
+.top-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.top-card:hover {
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+.top-card:hover .card-value,.top-card:hover .card-logo, .top-card:hover .title, .top-card:hover .sub-title{
+    color: white !important;
+}
+
+p {
+    margin: 0;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-value {
+    margin: 0;
+    flex: 3;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--secondaryColor);
+
+}
+
+
+.card-logo {
+    flex: 1;
+    font-size: 50px;
+    color: var(--subColor) !important;
+    text-align: center;
+}
+
+.title {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.sub-title {
+    color: var(--subColor);
+}
